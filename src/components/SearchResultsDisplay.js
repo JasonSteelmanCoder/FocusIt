@@ -1,11 +1,12 @@
 import React from 'react';
+import ResultTile from './ResultTile.js';
 
 const SearchResultsDisplay = () => {
     return (
         <div>
-            <p>result</p>
-            <p>result</p>
-            <p>result</p>
+            <ResultTile />
+            <ResultTile />
+            <ResultTile />
         </div>
     )    
 }

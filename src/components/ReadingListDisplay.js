@@ -1,12 +1,12 @@
 import React from 'react';
+import ResultTile from './ResultTile';
 
 const ReadingListDisplay = () => {
     return (
         <div>
-            <p>reading list item</p>
-            <p>reading list item</p>
-            <p>reading list item </p>
-            <p>reading list item </p>
+            <ResultTile />
+            <ResultTile />
+            <ResultTile />
         </div>
     )
 };

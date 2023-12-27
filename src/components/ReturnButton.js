@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const ReturnButton = () => {
     return (
-        <Link to={'/'} >Return to Search Page</Link>
+        <Link to={'/'}>Return to Search Page</Link>
     )
 };
 
