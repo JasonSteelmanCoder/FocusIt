@@ -1,8 +1,13 @@
 import React from 'react';
+import ReadingLists from '../components/ReadingLists.js';
+import ReturnButton from '../components/ReturnButton.js';
 
 const ListPage = () => {
     return (
-        <h2>Lists-lists-lists.</h2>
+        <div>
+            <ReadingLists />
+            <ReturnButton />
+        </div>
     )
 };
 

@@ -1,8 +1,17 @@
 import React from 'react';
+import SignInLink from '../components/SignInLink';
+import SearchForm from '../components/SearchForm';
+import SearchResultsDisplay from '../components/SearchResultsDisplay';
+import ReadingListForm from '../components/ReadingListForm';
 
 const SearchPage = () => {
     return (
-        <h2>Search, search, search...</h2>
+        <div>
+            <SignInLink />
+            <SearchForm />
+            <SearchResultsDisplay />
+            <ReadingListForm />
+        </div>
     )
 };
 
