@@ -6,7 +6,6 @@ const searchFormSlice = createSlice({
     reducers: {
         'addResults' : (state, action) => {
             return [
-                ...state,
                 ...(action.payload)
             ];
         },
