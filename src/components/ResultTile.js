@@ -5,7 +5,9 @@ import store from '../store.js';
 
 const ResultTile = ({title, author, datetime, numComments, numUpvotes, list, id}) => {
     const handleAddClick = (e) => {
-        store.dispatch(addPost(e.currentTarget.id))
+        if (!store.getState().readingListForm.includes(e.currentTarget.id)) {
+            store.dispatch(addPost(e.currentTarget.id))
+        }
     };
 
     const handleRemoveClick = (e) => {};
