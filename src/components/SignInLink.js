@@ -2,7 +2,7 @@ import React from 'react';
 
 const SignInLink = () => {
     return (
-        <a href='#'>Sign In!</a>
+        <a href='#' className='bordered'>Sign In!</a>
     )
 }
 

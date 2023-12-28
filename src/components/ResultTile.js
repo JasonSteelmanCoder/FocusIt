@@ -1,14 +1,15 @@
 import React from 'react';
+import '../css/ResultTile.css';
 
-const ResultTile = () => {
+const ResultTile = ({title, author, datetime, numComments, numUpvotes}) => {
     return (
-        <div>
-            <span>Title </span>
-            <span>author </span>
-            <span>datetime </span>
+        <div className='tile'>
+            <span><strong>{title} </strong></span>
+            <span>By {author} </span>
             <br />
-            <span># of comments </span>
-            <span># of upvotes </span>
+            <span>{datetime} </span>
+            <span>Comments: {numComments} </span>
+            <span>Upvotes: {numUpvotes} </span>
         </div>
     )
 };

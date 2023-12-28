@@ -5,8 +5,8 @@ const SearchForm = () => {
 
     return (
         <form onSubmit={handleSubmit}>
-            <input></input>
-            <button>Search</button>
+            <input className='bordered'></input>
+            <button className='bordered'>Search</button>
         </form>
     )
 };

@@ -6,7 +6,6 @@ const ReadingListDisplay = () => {
         <div>
             <ResultTile />
             <ResultTile />
-            <ResultTile />
         </div>
     )
 };

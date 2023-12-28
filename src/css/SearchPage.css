@@ -1,0 +1,15 @@
+#search-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.bordered{
+    margin: 1rem;
+}
+
+#reading-list-link {
+    padding: .25rem;
+    background-color: lightgray;
+    border-radius: 3px;
+    border: 1px solid black;
+}

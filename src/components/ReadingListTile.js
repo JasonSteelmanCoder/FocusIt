@@ -5,7 +5,7 @@ const ReadingListTile = () => {
     return (
         <div>
             <h3>Title</h3>
-            <Link>Read it now</Link>
+            <Link to={'/reading'}>Read it now</Link>
             <button>Mark it read</button>
             <button>Delete</button>
         </div>
