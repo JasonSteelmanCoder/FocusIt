@@ -10,7 +10,9 @@ const ResultTile = ({title, author, datetime, numComments, numUpvotes, list, id}
         }
     };
 
-    const handleRemoveClick = (e) => {};
+    const handleRemoveClick = (e) => {
+        store.dispatch(removePost(e.currentTarget.id))
+    };
 
     return (
         <div className='tile' onClick={list === 'search' ? handleAddClick : handleRemoveClick} id={id}>
