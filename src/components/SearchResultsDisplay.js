@@ -1,13 +1,17 @@
 import React from 'react';
 import ResultTile from './ResultTile.js';
-import queryResponse from '../mocks/mockQueryResponse.js';
+import { useSelector } from 'react-redux';
 
 const SearchResultsDisplay = () => {
+
+    const results = useSelector((state) => state.searchForm);
+
     return (
         <div>
-            {queryResponse.map((result) => {
+            {results.map((result) => {
                 return (
                     <ResultTile 
+                        key={result.id}
                         title={result.title}
                         author={result.author} 
                         datetime={result.datetime} 

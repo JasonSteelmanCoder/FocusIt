@@ -11,7 +11,6 @@ const SearchPage = () => {
             <div>
                 <SignInLink />
                 <SearchForm />
-                <SearchResultsDisplay />
             </div>
             <ReadingListForm />
         </div>
