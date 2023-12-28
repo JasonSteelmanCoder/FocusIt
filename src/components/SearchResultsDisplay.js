@@ -12,11 +12,13 @@ const SearchResultsDisplay = () => {
                 return (
                     <ResultTile 
                         key={result.id}
+                        id={result.id}
                         title={result.title}
                         author={result.author} 
                         datetime={result.datetime} 
                         numComments={result.numComments}
                         numUpvotes={result.numUpvotes}
+                        list='search'
                     />
                 )
             })}
