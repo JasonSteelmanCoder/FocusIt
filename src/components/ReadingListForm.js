@@ -23,6 +23,7 @@ const ReadingListForm = () => {
         e.preventDefault();
         store.dispatch(addList({[listTitle]: selectedPosts}));
         store.dispatch(clearReadingList());
+        setListTitle('');
     };
 
     return (
