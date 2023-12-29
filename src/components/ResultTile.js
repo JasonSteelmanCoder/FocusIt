@@ -5,7 +5,9 @@ import store from '../store.js';
 
 const ResultTile = ({title, author, datetime, numComments, numUpvotes, list, id}) => {
     const handleAddClick = (e) => {
+        // When that id is not already in the readingListForm
         if (!store.getState().readingListForm.includes(e.currentTarget.id)) {
+            // add post to the readingListForm
             store.dispatch(addPost(e.currentTarget.id))
         }
     };
