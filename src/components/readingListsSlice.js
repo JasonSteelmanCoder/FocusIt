@@ -11,7 +11,7 @@ const readingListsSlice = createSlice({
             ]
         },
         removeList: (state, action) => {
-            return state.filter(list => list.id !== action.payload)
+            return state.filter(list => Object.keys(list)[0] !== action.payload)
         } 
     }
 })

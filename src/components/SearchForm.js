@@ -23,7 +23,7 @@ const SearchForm = () => {
     return (
         <div>
             <form onSubmit={handleSubmit}>
-                <input className='bordered' value={searchValue} onChange={handleChange}></input>
+                <input className='bordered' value={searchValue} onChange={handleChange} placeholder='Search for posts!'></input>
                 <button className='bordered' disabled={!searchValue} >Search</button>
             </form>
             <SearchResultsDisplay />

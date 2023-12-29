@@ -28,7 +28,7 @@ const ReadingListForm = () => {
 
     return (
         <form onSubmit={handleSubmit}>
-            <input className='bordered' placeholder='Type title here' value={listTitle} onChange={handleChange} />
+            <input className='bordered' placeholder="Your list's title" value={listTitle} onChange={handleChange} />
             <button type='submit' className='bordered' disabled={disabled} >Save your reading list</button>
             <Link to={'lists'} className='bordered' id='reading-list-link'>See your Reading Lists</Link>
             <ReadingListDisplay />

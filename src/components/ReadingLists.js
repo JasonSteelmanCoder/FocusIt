@@ -1,10 +1,9 @@
 import React from 'react';
 import ReadingListTile from './ReadingListTile';
 import { useSelector } from 'react-redux';
-import store from '../store';
 
 const ReadingLists = () => {
-    const lists = store.getState().readingLists;
+    const lists = useSelector((state) => state.readingLists);
 
     return (
         <div>
