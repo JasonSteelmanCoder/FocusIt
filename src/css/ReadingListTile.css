@@ -1,0 +1,8 @@
+.reading-list-tile {
+    border: 1px solid black;
+    padding: 1rem;
+}
+
+.left-margined {
+    margin-left: .5rem;
+}

@@ -1,0 +1,6 @@
+Set up cumulative collection of selected posts
+Clear readinglist after saving
+Populate lists page dynamically
+Style lists page
+
+Delete posts from cumulative when list is deleted

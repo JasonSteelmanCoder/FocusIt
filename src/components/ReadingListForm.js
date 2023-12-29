@@ -21,6 +21,8 @@ const ReadingListForm = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         store.dispatch(addList({[listTitle]: selectedPosts}));
+        //TODO: clear reading list
+        //Maybe: give a 'saved' message
     };
 
     return (
