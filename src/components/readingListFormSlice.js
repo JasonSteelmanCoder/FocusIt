@@ -14,9 +14,13 @@ const readingListFormSlice = createSlice({
         'removePost': (state, action) => {
             return state.filter((post) => post !== action.payload)
         },
+
+        'clearReadingList': (state, action) => {
+            return []
+        },
     },
 })
 
-export const { addPost, removePost } = readingListFormSlice.actions;
+export const { addPost, removePost, clearReadingList } = readingListFormSlice.actions;
 
 export default readingListFormSlice.reducer;

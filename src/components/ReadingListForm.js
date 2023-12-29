@@ -5,6 +5,7 @@ import store from '../store.js';
 import { useSelector } from 'react-redux';
 import { useState } from 'react';
 import { addList } from './readingListsSlice.js';
+import { clearReadingList } from './readingListFormSlice.js';
 
 const ReadingListForm = () => {
     const [listTitle, setListTitle] = useState(''); 
@@ -21,8 +22,7 @@ const ReadingListForm = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         store.dispatch(addList({[listTitle]: selectedPosts}));
-        //TODO: clear reading list
-        //Maybe: give a 'saved' message
+        store.dispatch(clearReadingList());
     };
 
     return (

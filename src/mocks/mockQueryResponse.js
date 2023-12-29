@@ -15,7 +15,7 @@ const queryResponse = [
         author: 'Mark Twain',
         datetime: 'two years ago', 
         numComments: '387',
-        numUpvotes: '993',
+        numUpvotes: '883',
     },
 
 
