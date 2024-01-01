@@ -16,7 +16,7 @@ const ReadingPortal = ({ post }) => {
 
     useEffect(() => {
         setPostToDisplay(getPostById(postIds[post]));
-    }, [post]);
+    }, [post, postIds]);
 
     return (
         <div>
