@@ -11,7 +11,7 @@ const ReadingListTile = ({title}) => {
 
     return (
         <div className='reading-list-tile bordered'>
-            <Link to={`/reading?listTitle=${title}&post=0`}>
+            <Link to={`/reading?listTitle=${title}`}>
                 <h3>{title}</h3>
             </Link>
             <button className='left-margined' onClick={handleDeleteClick}>Delete list</button>

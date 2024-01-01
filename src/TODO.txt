@@ -1,6 +1,14 @@
-Set up cumulative collection of selected posts
-Clear readinglist after saving
-Populate lists page dynamically
-Style lists page
+Build sign-in functionality
+Call API for search
 
 Delete posts from cumulative when list is deleted
+
+Frills: 
+    Make clickable tiles show hand cursor
+    Style the reading page
+    Give result tiles buttons instead of clicking on the whole tiles (at least to remove)
+    Add directions at the top of main page
+    Add directions on lists page for when there are no lists yet
+    Add read/unread functionality
+    Add number of reading lists to `See your reading list` button on main page
+    Make pages responsive

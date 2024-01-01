@@ -2,7 +2,7 @@ import React from 'react';
 
 const SignInLink = () => {
     return (
-        <a href='#' className='bordered'>Sign In!</a>
+        <a href='https://therealfocusit.netlify.app' className='bordered'>Sign In!</a>
     )
 }
 

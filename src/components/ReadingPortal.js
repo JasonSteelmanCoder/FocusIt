@@ -1,6 +1,6 @@
 import React from 'react';
 import store from '../store';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 const ReadingPortal = ({ post }) => {
     const queryParams = new URLSearchParams(window.location.search);
@@ -12,10 +12,10 @@ const ReadingPortal = ({ post }) => {
         return store.getState().archive.find((archivedItem) => archivedItem.id === pin);
     }
 
-    let postToDisplay = getPostById(postIds[post]);
+    const [postToDisplay, setPostToDisplay] = useState(getPostById(postIds[post]));
 
     useEffect(() => {
-        postToDisplay = getPostById(postIds[post])
+        setPostToDisplay(getPostById(postIds[post]));
     }, [post]);
 
     return (

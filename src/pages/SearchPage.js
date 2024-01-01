@@ -1,7 +1,6 @@
 import React from 'react';
 import SignInLink from '../components/SignInLink';
 import SearchForm from '../components/SearchForm';
-import SearchResultsDisplay from '../components/SearchResultsDisplay';
 import ReadingListForm from '../components/ReadingListForm';
 import '../css/SearchPage.css';
 
