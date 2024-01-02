@@ -1,6 +1,7 @@
 import React from 'react';
 import ResultTile from './ResultTile.js';
 import { useSelector } from 'react-redux';
+import moment from 'moment';
 
 const SearchResultsDisplay = () => {
 
@@ -11,13 +12,15 @@ const SearchResultsDisplay = () => {
             {results.map((result) => {
                 return (
                     <ResultTile 
-                        key={result.id}
-                        id={result.id}
-                        title={result.title}
-                        author={result.author} 
-                        datetime={result.datetime} 
-                        numComments={result.numComments}
-                        numUpvotes={result.numUpvotes}
+                        key={result.data.id}
+                        id={result.data.id}
+                        title={result.data.title}
+                        author={result.data.author} 
+                        datetime={
+                            moment.unix(result.data.created_utc).fromNow()
+                        } 
+                        numComments={result.data.num_comments}
+                        numUpvotes={result.data.score}
                         list='search'
                     />
                 )

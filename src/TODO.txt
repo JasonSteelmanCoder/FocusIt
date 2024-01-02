@@ -1,9 +1,10 @@
-Build sign-in functionality
-Call API for search
+Display actual article in reading portal
+Style reading menu
 
 Delete posts from cumulative when list is deleted
 
 Frills: 
+    Add thumbnails to results tiles and reading list tiles
     Make clickable tiles show hand cursor
     Style the reading page
     Give result tiles buttons instead of clicking on the whole tiles (at least to remove)
