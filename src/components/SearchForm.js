@@ -11,7 +11,7 @@ const SearchForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        await fetch(`http://oauth.reddit.com/search.json?q=${searchValue}&sort=new`)
+        await fetch(`https://oauth.reddit.com/search.json?q=${searchValue}&sort=new`)
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Network response was not okay.')
