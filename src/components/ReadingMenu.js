@@ -21,7 +21,7 @@ const ReadingMenu = ({ setPost }) => {
             {postIds.map((id, index) => {
                 return (
                     <div key={index} >
-                        <button onClick={handleMenuClick} targetIdentifier={index}>{getPostById(id).title}</button><br />
+                        <button onClick={handleMenuClick} targetidentifier={index}>{getPostById(id).data.title}</button><br />
                     </div>
                 )
             })}

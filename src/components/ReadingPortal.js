@@ -9,7 +9,7 @@ const ReadingPortal = ({ post }) => {
     const postIds = store.getState().readingLists.find((list) => Object.keys(list)[0] === listTitle)[listTitle];
 
     const getPostById = (pin) => {
-        return store.getState().archive.find((archivedItem) => archivedItem.id === pin);
+        return store.getState().archive.find((archivedItem) => archivedItem.data.id === pin);
     }
 
     const [postToDisplay, setPostToDisplay] = useState(getPostById(postIds[post]));
