@@ -10,7 +10,7 @@ const ReadingListDisplay = () => {
     return (
         <div>
             {selectedPosts.map((post) => {
-                const results = store.getState().searchForm;
+                const results = store.getState().archive;
                 const postToAdd = results.find(result => result.data.id === post);
                 return (
                     <ResultTile 

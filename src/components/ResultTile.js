@@ -16,7 +16,7 @@ const ResultTile = ({title, author, datetime, numComments, numUpvotes, list, id}
         const archiveItems = store.getState().archive;
         const isPostInArchive = () => {
             for (let item of archiveItems) {
-                if (item.id === id) {
+                if (item.data.id === id) {
                     return true;
                 };
             }
@@ -24,13 +24,15 @@ const ResultTile = ({title, author, datetime, numComments, numUpvotes, list, id}
         }
         if (!isPostInArchive()) {
             store.dispatch(addArchived({
-                id: id,
-                title: title,
-                author: author,
-                datetime: datetime,
-                numComments: numComments,
-                numUpvotes: numUpvotes,
-                list: 'archive',
+                data: {
+                    id: id,
+                    title: title,
+                    author: author,
+                    datetime: datetime,
+                    numComments: numComments,
+                    numUpvotes: numUpvotes,
+                    list: 'archive',
+                }
             }))
         }
     };
