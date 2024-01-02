@@ -21,6 +21,7 @@ const SearchResultsDisplay = () => {
                         } 
                         numComments={result.data.num_comments}
                         numUpvotes={result.data.score}
+                        selftext={result.data.selftext}
                         list='search'
                     />
                 )

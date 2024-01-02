@@ -20,7 +20,12 @@ const ReadingPortal = ({ post }) => {
 
     return (
         <div>
-            {JSON.stringify(postToDisplay)}
+            <h1>{postToDisplay.data.title}</h1>
+            {postToDisplay.data.selftext_paragraphs.map((paragraph, index) => {
+                return (
+                    <p key={index}>{paragraph}</p>
+                )
+            })}
         </div>
     )
 };
