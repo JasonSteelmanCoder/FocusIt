@@ -10,7 +10,6 @@ const SearchResultsDisplay = () => {
     return (
         <div>
             {results.map((result) => {
-                const hasImage = result.url_overridden_by_dest;
                 return (
                     <ResultTile 
                         key={result.data.id}
@@ -23,7 +22,7 @@ const SearchResultsDisplay = () => {
                         numComments={result.data.num_comments}
                         numUpvotes={result.data.score}
                         selftext={result.data.selftext}
-                        url_overridden_by_dest={hasImage ? result.data.url_overridden_by_dest : null}
+                        url_overridden_by_dest={result.data.url_overridden_by_dest}
                         list='search'
                     />
                 )
