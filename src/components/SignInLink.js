@@ -10,7 +10,7 @@ const SignInLink = () => {
 
     return (
         // add .compact after the word authorize to get a page more friendly to small screens
-        <a href={`https://www.reddit.com/api/v1/authorize.compact?client_id=${CLIENT_ID}&response_type=${TYPE}&state=${RANDOM_STRING}&redirect_uri=${URI}&duration=${DURATION}&scope=${SCOPE_STRING}`} className='bordered'>Sign In!</a>
+        <a href={`https://www.reddit.com/api/v1/authorize.compact?client_id=${CLIENT_ID}&response_type=${TYPE}&state=${RANDOM_STRING}&redirect_uri=${URI}&duration=${DURATION}&scope=${SCOPE_STRING}`} className='bordered'>Sign In to Reddit!</a>
     )
 }
 

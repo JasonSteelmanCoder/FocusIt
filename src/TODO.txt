@@ -1,6 +1,6 @@
-Display actual article in reading portal
 Style reading menu
 
+Make API call errors visible to user
 Delete posts from cumulative when list is deleted
 
 Frills: 

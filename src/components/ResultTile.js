@@ -4,7 +4,7 @@ import { addPost, removePost } from './readingListFormSlice.js';
 import store from '../store.js';
 import { addArchived } from './archiveSlice.js';
 
-const ResultTile = ({title, author, datetime, numComments, numUpvotes, list, id, selftext}) => {
+const ResultTile = ({title, author, datetime, numComments, numUpvotes, list, id, selftext, url_overridden_by_dest}) => {
     const handleAddClick = (e) => {
         // When that id is not already in the readingListForm
         if (!store.getState().readingListForm.includes(e.currentTarget.id)) {
@@ -32,6 +32,7 @@ const ResultTile = ({title, author, datetime, numComments, numUpvotes, list, id,
                     numComments: numComments,
                     numUpvotes: numUpvotes,
                     selftext_paragraphs: selftext.split('&amp;#x200B;'),  // makes selftext into paragraphs that can be rendered as separate <p> elements
+                    url_overridden_by_dest: url_overridden_by_dest,
                     list: 'archive',
                 }
             }))
