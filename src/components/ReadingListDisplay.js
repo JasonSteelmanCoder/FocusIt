@@ -2,7 +2,6 @@ import React from 'react';
 import ResultTile from './ResultTile';
 import store from '../store.js';
 import { useSelector } from 'react-redux';
-import moment from 'moment';
 
 const ReadingListDisplay = () => {
     const selectedPosts = useSelector(state => state.readingListForm);
