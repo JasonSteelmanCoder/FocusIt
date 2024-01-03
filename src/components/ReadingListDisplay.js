@@ -18,11 +18,9 @@ const ReadingListDisplay = () => {
                         id={postToAdd.data.id}
                         title={postToAdd.data.title}
                         author={postToAdd.data.author} 
-                        datetime={
-                            moment.unix(postToAdd.data.created_utc).fromNow()
-                        } 
-                        numComments={postToAdd.data.num_comments}
-                        numUpvotes={postToAdd.data.score}
+                        datetime={postToAdd.data.datetime} 
+                        numComments={postToAdd.data.numComments}
+                        numUpvotes={postToAdd.data.numUpvotes}
                         list='reading'
                     />
                 )
