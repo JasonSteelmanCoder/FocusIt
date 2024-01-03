@@ -15,6 +15,8 @@ const ReadingListForm = () => {
     const isListTitleEmpty = !listTitle ? true : false;
     const disabled = isReadingListEmpty || isListTitleEmpty ? true : false;
 
+    const numReadingLists = (useSelector(state => state.readingLists)).length;
+
     const handleChange = (e) => {
         setListTitle(e.currentTarget.value);
     };
@@ -30,7 +32,7 @@ const ReadingListForm = () => {
         <form onSubmit={handleSubmit}>
             <input className='bordered' placeholder="Your list's title" value={listTitle} onChange={handleChange} />
             <button type='submit' className='bordered' disabled={disabled} >Save your reading list</button>
-            <Link to={'lists'} className='bordered' id='reading-list-link'>See your Reading Lists</Link>
+            <Link to={'lists'} className='bordered' id='reading-list-link'>See your Reading Lists ({numReadingLists})</Link>
             <ReadingListDisplay />
         </form>
     )
