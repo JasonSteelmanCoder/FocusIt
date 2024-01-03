@@ -26,7 +26,7 @@ const ReadingPortal = ({ post }) => {
                     <p key={index}>{paragraph}</p>
                 )
             })}
-            <img src={postToDisplay.data.url_overridden_by_dest} />
+            <img src={postToDisplay.data.url_overridden_by_dest} alt='User supplied image'>Image not supported</img>
         </div>
     )
 };
